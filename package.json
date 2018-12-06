@@ -1,0 +1,35 @@
+{
+  "name": "svg-icons",
+  "version": "0.0.49",
+  "description": "Simple inline SVGs with more control and styling",
+  "main": "./bin/index.js",
+  "author": "Eran Goldin",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "6.24.0",
+    "babel-loader": "6.4.1",
+    "babel-plugin-transform-object-rest-spread": "6.23.0",
+    "case-sensitive-paths-webpack-plugin": "2.1.1",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "dir-loader": "^0.3.0",
+    "bluebird": "3.5.0",
+    "path": "0.12.7",
+    "raw-loader": "0.5.1",
+    "webpack": "2.3.3",
+    "xml2js": "0.4.19"
+  },
+  "peerDependencies": {
+    "prop-types": "15.6.1",
+    "react": "16.3.2"
+  },
+  "devDependencies": {
+    "react": "16.3.2",
+    "prop-types": "15.6.1"
+  },
+  "scripts": {
+    "catalog": "node ./buildCatalog.js",
+    "local-catalog": "PATH_PREFIX=. node ./buildCatalog.js",
+    "compile": "webpack --config webpack.config.js"
+  }
+}
